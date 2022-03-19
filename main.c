@@ -34,5 +34,8 @@ int main(int argc, char** argv){
     for (int i=0ul; i<nrow*ncol; ++i) {
         assert(cmat[i]==i*5);
     }
+    free(amat);
+    free(bmat);
+    free(cmat);
     return 0;
 }
